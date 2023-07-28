@@ -10,11 +10,11 @@ public class CORSConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/customers/register")
-                .allowedOrigins("https://djs-sesh.vercel.app/") 
-                .allowedMethods("POST", "OPTIONS") 
-                .allowedHeaders("*") 
-                .allowCredentials(true) 
-                .maxAge(3600); 
+                .allowedOrigins("https://djs-sesh.vercel.app")
+                .allowedMethods("POST", "OPTIONS")
+                .allowedHeaders("*")
+                .allowCredentials(true)
+                .maxAge(3600);
     }
 
 }
